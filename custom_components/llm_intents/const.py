@@ -35,6 +35,11 @@ CONF_BRAVE_LATITUDE = "brave_latitude"
 CONF_BRAVE_LONGITUDE = "brave_longitude"
 CONF_BRAVE_TIMEZONE = "brave_timezone"
 CONF_BRAVE_POST_CODE = "brave_post_code"
+# Google Search-specific constants
+
+CONF_GOOGLE_SEARCH_ENABLED = "google_search_enabled"
+CONF_GOOGLE_SEARCH_API_KEY = "google_search_api_key"
+CONF_GOOGLE_SEARCH_MODEL = "google_search_model"
 
 # Google Places-specific constants
 
@@ -74,6 +79,10 @@ SERVICE_DEFAULTS = {
     CONF_GOOGLE_PLACES_RADIUS: 5,
     CONF_GOOGLE_PLACES_RANKING: "Distance",
     CONF_WIKIPEDIA_NUM_RESULTS: 1,
+    CONF_GOOGLE_SEARCH_API_KEY: "",
+    #CONF_GOOGLE_SEARCH_MODEL: "gemini-2.0-flash-exp",
+    #CONF_GOOGLE_SEARCH_MODEL: "gemini-2.5-flash",
+    CONF_GOOGLE_SEARCH_MODEL: "gemini-2.5-flash-preview-09-2025",
     CONF_DAILY_WEATHER_ENTITY: None,
     CONF_HOURLY_WEATHER_ENTITY: None,
 }

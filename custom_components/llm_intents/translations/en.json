@@ -6,6 +6,7 @@
         "description": "Select the services you want to enable for Tools for Assist.",
         "data": {
           "brave_search_enabled": "Enable Brave Web Search",
+          "google_search_enabled": "Enable Google Search",
           "google_places_enabled": "Enable Google Places",
           "wikipedia_enabled": "Enable Wikipedia Search",
           "weather_enabled": "Enable Weather Forecast"
@@ -22,6 +23,14 @@
           "brave_longitude": "Longitude (optional)",
           "brave_timezone": "Timezone (optional)",
           "brave_post_code": "Post Code (optional)"
+        }
+      },
+      "google_search": {
+        "title": "Configure Google Search",
+        "description": "Configure Google Search (Gemini Grounding) API settings.",
+        "data": {
+          "google_search_api_key": "API Key",
+          "google_search_model": "Model (e.g. gemini-2.0-flash-exp)"
         }
       },
       "google_places": {
@@ -71,6 +80,7 @@
         "description": "Select which services to enable or disable.\n\n{current_services}",
         "data": {
           "brave_search_enabled": "Enable Brave Web Search",
+          "google_search_enabled": "Enable Google Search",
           "google_places_enabled": "Enable Google Places",
           "wikipedia_enabled": "Enable Wikipedia Search"
         }
@@ -93,6 +103,14 @@
           "brave_longitude": "Longitude (optional)",
           "brave_timezone": "Timezone (optional)",
           "brave_post_code": "Post Code (optional)"
+        }
+      },
+      "google_search": {
+        "title": "Configure Google Search",
+        "description": "Configure Google Search (Gemini Grounding) API settings.",
+        "data": {
+          "google_search_api_key": "API Key",
+          "google_search_model": "Model (e.g. gemini-2.0-flash-exp)"
         }
       },
       "google_places": {

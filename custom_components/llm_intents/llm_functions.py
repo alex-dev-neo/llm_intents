@@ -10,6 +10,7 @@ from .BraveSearch import SearchWebTool
 from .const import (
     CONF_BRAVE_ENABLED,
     CONF_GOOGLE_PLACES_ENABLED,
+    CONF_GOOGLE_SEARCH_ENABLED,
     CONF_WEATHER_ENABLED,
     CONF_WIKIPEDIA_ENABLED,
     DOMAIN,
@@ -19,6 +20,7 @@ from .const import (
     WEATHER_SERVICES_PROMPT,
 )
 from .GooglePlaces import FindPlacesTool
+from .GoogleSearch import GoogleSearchTool
 from .Weather import WeatherForecastTool
 from .Wikipedia import SearchWikipediaTool
 
@@ -26,6 +28,7 @@ _LOGGER = logging.getLogger(__name__)
 
 SEARCH_CONF_ENABLED_MAP = [
     (CONF_BRAVE_ENABLED, SearchWebTool),
+    (CONF_GOOGLE_SEARCH_ENABLED, GoogleSearchTool),
     (CONF_GOOGLE_PLACES_ENABLED, FindPlacesTool),
     (CONF_WIKIPEDIA_ENABLED, SearchWikipediaTool),
 ]
