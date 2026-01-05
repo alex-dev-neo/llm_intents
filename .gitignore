@@ -9,3 +9,5 @@
 htmlcov/
 coverage.xml
 /.idea/
+
+.DS_Store
