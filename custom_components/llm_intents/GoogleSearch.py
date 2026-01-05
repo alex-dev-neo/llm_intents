@@ -27,10 +27,16 @@ class GoogleSearchTool(llm.Tool):
 
     # Instruction for the model on how to handle results
     response_instruction = """
-    Review the search results to provide a clear and concise answer to the user query.
-    If the search results do not answer the request, advise the user.
-    Your response should be in plain-text, 2-3 sentences long.
+    Используй результаты поиска и текущую дату из системного промпта.
+    Если пользователь спросил "через сколько дней/месяцев", ты ОБЯЗАНА сама вычислить разницу,
+    основываясь на сегодняшнем числе.
+    Передай информацию из результатов поиска максимально полно, не сокращая и не упрощая ответ.
     """
+    # response_instruction = """
+    # Review the search results to provide a clear and concise answer to the user query.
+    # If the search results do not answer the request, advise the user.
+    # Your response should be in plain-text, 2-3 sentences long.
+    # """
 
     parameters = vol.Schema(
         {
